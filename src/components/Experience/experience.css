@@ -1,0 +1,55 @@
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 30px;
+  border-left: 2px solid var(--timeline-line); /* ✅ */
+}
+
+/* EACH ITEM */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* DOT */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* GLOW */
+.timeline-item::before {
+  box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);
+}
+
+/* CARD CONTENT */
+.timeline-content {
+  background: var(--timeline-card);
+  margin-left: 10px;
+  padding: 20px 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.timeline-content:hover {
+  transform: translateX(8px);
+  border: 1px solid var(--accent); 
+}
+
+/* COMPANY TEXT */
+.company {
+  color: var(--subtitle);
+}
+
+/* LIST TEXT */
+.timeline-content li {
+  color: var(--text-light);
+}

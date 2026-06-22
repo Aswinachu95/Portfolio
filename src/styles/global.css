@@ -1,0 +1,140 @@
+:root {
+  --bg: #0b0f1a;
+  --card: #12172a;
+  --text: #ffffff;
+  --text-secondary: #aaa6c3;
+  --subtitle: #aaa6c3;
+
+  --accent: #7c5cff;
+  --accent-strong: #915eff;
+
+  --nav-bg: rgba(5, 8, 22, 0.8);
+  --nav-link: #aaa6c3;
+  --nav-hover: #ffffff;
+
+  --border-hover: #915eff;
+
+  --timeline-line: #2a2250;
+  --timeline-card: #151030;
+
+  --input-bg: #1d1836;
+  --form-bg: #151030;
+
+  --footer-bg: #050816;
+  --footer-border: #1d1836;
+
+  --icon-bg: rgba(255, 255, 255, 0.04);
+  --icon-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #0b0f1a;
+  --text-secondary: #6b7280;
+  --subtitle: #6b7280;
+
+  --accent: #7c5cff;
+  --accent-strong: #7c5cff;
+
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-link: #6b7280;
+  --nav-hover: #0b0f1a;
+
+  --border-hover: #7c5cff;
+
+  --timeline-line: #d1d5db;
+  --timeline-card: #ffffff;
+
+  --input-bg: #f1f5f9;
+  --form-bg: #ffffff;
+
+  --footer-bg: #f8fafc;
+  --footer-border: #e5e7eb;
+
+  --icon-bg: #f1f3ff;
+  --icon-border: rgba(0, 0, 0, 0.06);
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BACKGROUND (IMPORTANT) */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* SECTION */
+.section {
+  padding: 120px 0;
+}
+
+/* TITLES */
+.section-subtitle {
+  color: var(--subtitle);
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* CARD (IMPORTANT) */
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid var(--border-hover);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 25px;
+}
+.theme-btn {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}

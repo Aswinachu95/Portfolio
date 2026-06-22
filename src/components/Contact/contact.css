@@ -1,0 +1,89 @@
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background: var(--form-bg);
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--footer-border);
+  background: var(--input-bg);
+  color: var(--text);  
+  outline: none;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent);
+  opacity: 0.9;
+}
+
+/* CARD TITLE */
+.contact-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ITEM ROW */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ICON */
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: var(--input-bg);
+  border-radius: 10px;
+}
+
+/* TEXT BLOCK */
+.contact-item p {
+  font-size: 15px;
+  color: var(--subtitle);
+}
+
+/* LINK */
+.contact-item a {
+  color: var(--text); 
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.contact-info:hover {
+  border: 1px solid var(--accent);
+  transform: translateY(-5px);
+}
+
+/* HOVER EFFECT */
+.contact-item a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
