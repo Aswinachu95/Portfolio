@@ -24,6 +24,7 @@ import Edunexus from "../assets/images/Edunexus.avif";
 import Portfolio from "../assets/images/Portfolio.avif";
 import Domio from "../assets/images/Domio.avif";
 import Ideaflux from "../assets/images/Ideaflux.avif";
+import Wellscope from "../assets/images/Wellscope.webp";
 
 export const skills = [
   { name: "React", icon: reactLogo, type: "Frontend Library", category: "Frontend" },
@@ -67,7 +68,7 @@ export const projects = [
   {
     title: "E-Voting Web Application using Blockchain Technologies",
     description:
-      "Architected a tamper-proof e-voting platform using blockchain data structures, cryptographic vote verification, and audit trails for 100+ concurrent submissions.",
+      "Tamper-proof e-voting platform leveraging blockchain data structures, cryptographic vote verification, secure audit trails, and tamper-resistant vote recording for electoral integrity.",
     image: Blockchain,
     techStack: ["Django", "Python", "Blockchain", "Solidity", "SQLite"],
     highlights: [
@@ -80,9 +81,9 @@ export const projects = [
   },
 
   {
-    title: "EduNexus Academic Networking & Placement Management System",
+    title: "EduNexus - Academic Networking & Placement Management System",
     description:
-      "Engineered a 3-role student, faculty, and alumni portal with RBAC session authentication, placement tracking, event coordination, alumni networking, and notifications.",
+      "Three-tier academic portal with role-based access control, secure authentication, placement tracking, event coordination, alumni networking, and real-time notification systems.",
     image: Edunexus,
     techStack: ["Django", "Python", "MySQL", "RBAC", "JWT"],
     highlights: [
@@ -97,7 +98,7 @@ export const projects = [
   {
     title: "Portfolio Website",
     description:
-      "Designed and developed a responsive personal portfolio website to showcase projects, skills, and experience.",
+      "Responsive personal portfolio showcasing projects, technical skills, professional experience, and contact information with dynamic theme switching and optimized asset loading.",
     image: Portfolio,
     techStack: ["React", "CSS", "UI Design"],
     highlights: [
@@ -110,9 +111,9 @@ export const projects = [
   },
 
   {
-    title: "Domio",
+    title: "Domio — Multi-Vendor Rental Marketplace",
     description:
-      "Designed and deployed a scalable multi-vendor rental marketplace with 10+ vendor dashboards, dynamic routing, RBAC access control, and optimized Django ORM queries.",
+      "Scalable multi-vendor rental marketplace with role-based access control, vendor dashboards, dynamic routing, optimized database queries, and efficient marketplace operations.",
     image: Domio,
     techStack: ["Python", "Django", "MySQL", "Bootstrap 5", "RBAC"],
     highlights: [
@@ -125,9 +126,9 @@ export const projects = [
   },
 
   {
-    title: "Ideaflux",
+    title: "Ideaflux — Startup Idea Validation Platform",
     description:
-      "Developed a scalable Django web app with RBAC authentication, ORM-driven database design, and core features for idea validation, feedback, and investor-founder collaboration.",
+      "Django web application with role-based access control, idea validation workflows, feedback mechanisms, and collaboration tools for startup ecosystem engagement.",
     image: Ideaflux,
     techStack: ["Python", "Django", "Bootstrap"],
     highlights: [
@@ -137,6 +138,21 @@ export const projects = [
       "Status: Django web app with core product workflow completed.",
     ],
     github: "https://github.com/Aswinachu95/Ideaflux.git",
+  },
+  {
+    title: "Wellscope AI — Clinical Insights Platform",
+    description:
+      "AI-powered remote patient monitoring and health alert system with explainable ML models, secure data ingestion, NLP pipelines, and clinical dashboards.",
+    image: Wellscope,
+    techStack: ["React", "Django", "Python", "TensorFlow", "NLP", "Docker", "AWS", "PostgreSQL"],
+    highlights: [
+      "Integrated secure ETL pipelines to ingest and normalize electronic health records.",
+      "Built explainable ML models and NLP pipelines for risk stratification and note summarization.",
+      "Responsive React dashboard with patient timelines, interactive charts, and contextual explanations.",
+      "Containerized deployments with Docker and CI/CD targeting AWS for scalable inference.",
+      "Status: Prototype with core ML pipelines, dashboard, and API integrations complete.",
+    ],
+    github: "https://github.com/Aswinachu95/Wellscope-AI",
   },
 ];
 
